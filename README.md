@@ -14,7 +14,7 @@ Installation
 Prerequisites
 Ensure you have the following installed:
 
-Python 3.8+
+Python 3.9+
 TensorFlow 2.x
 Snowflake Connector for Python (for Snowpark)
 yfinance for fetching stock data
