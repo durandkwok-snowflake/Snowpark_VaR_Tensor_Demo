@@ -130,10 +130,6 @@ def run_var_calculation():
 ````
 ![image](https://github.com/user-attachments/assets/941bdd32-ae26-4976-861f-98a0bfe24899)
 
-Step : Main function to fetch data, run VaR, and save to Snowflake
-
-![image](https://github.com/user-attachments/assets/be5a5430-cf09-407c-a4ba-3cd718749992)
-
 Step : Run the VaR calculation
 ```Python
 # Run the VaR calculation
@@ -149,7 +145,6 @@ session.close()
 ![image](https://github.com/user-attachments/assets/254daf5b-8b4a-4f3a-a3ca-56de534b1d65)
 
 The script calculates VaR for AAPL stock over a 5-year period using Monte Carlo simulations with TensorFlow.
-
 Steps:
 
 Fetch Stock Data: Uses yfinance to download 5 years of historical data for AAPL.
@@ -171,7 +166,3 @@ Load historical stock data fetched via yfinance.
 Store the final VaR results into a Snowflake table.
 At the end of the process, the results are saved to a Snowflake table as follows:
 
-```python
-snowpark_df.write.mode("overwrite").save_as_table("AAPL_VAR_RESULTS")
-```
-Make sure your Snowflake environment has the necessary permissions to write data.
