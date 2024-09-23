@@ -20,6 +20,7 @@ Snowflake Connector for Python (for Snowpark)
 yfinance for fetching stock data
 Install the required packages with:
 
+Step : Install Packages
 
 ```Python
 pip install tensorflow yfinance
@@ -28,11 +29,11 @@ pip install tensorflow yfinance
 
 ![image](https://github.com/user-attachments/assets/8facffce-ffff-4985-b47c-41f02d55b8d0)
 
+Step : Import Libraries
 ![image](https://github.com/user-attachments/assets/f3e53415-2c38-4932-b06b-a0ee2cf4fe38)
 
-Snowflake Setup
-Make sure you have a Snowflake account and set up your credentials for Snowpark access.
-In this example, Snowpark fetches an active session (get_active_session()). You should have your Snowflake environment configured to handle this, or replace it with your session creation logic if needed.
+
+Step : Create session
 ![image](https://github.com/user-attachments/assets/39a8d3a4-0ccb-4dd6-9c3d-7bb71e183f18)
 
 Step : to create the function to Fetch AAPL stock data using yfinance
