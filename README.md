@@ -28,18 +28,33 @@ pip install tensorflow yfinance
 
 ![image](https://github.com/user-attachments/assets/8facffce-ffff-4985-b47c-41f02d55b8d0)
 
+![image](https://github.com/user-attachments/assets/f3e53415-2c38-4932-b06b-a0ee2cf4fe38)
+
 Snowflake Setup
 Make sure you have a Snowflake account and set up your credentials for Snowpark access.
-
-
-Usage
-Configuration
-Before running the code, ensure your Snowflake connection is properly configured. 
 In this example, Snowpark fetches an active session (get_active_session()). You should have your Snowflake environment configured to handle this, or replace it with your session creation logic if needed.
+![image](https://github.com/user-attachments/assets/39a8d3a4-0ccb-4dd6-9c3d-7bb71e183f18)
 
-```python
-session = get_active_session()
-```
+Step : to create the function to Fetch AAPL stock data using yfinance
+![image](https://github.com/user-attachments/assets/51472a07-6e99-4927-b34b-67c5d62d9af3)
+
+Step : to create the function for Monte Carlo simulation using TensorFlow (Geometric Brownian Motion)
+![image](https://github.com/user-attachments/assets/2bf08cfb-70db-4b46-8b73-751fb1d73016)
+
+Step : VaR Calculation using Monte Carlo Simulations
+![image](https://github.com/user-attachments/assets/977e2d79-7803-44b2-b0b2-6a71c6ebb7fe)
+
+Step : Main function to fetch data, run VaR, and save to Snowflake
+![image](https://github.com/user-attachments/assets/941bdd32-ae26-4976-861f-98a0bfe24899)
+
+Step : Main function to fetch data, run VaR, and save to Snowflake
+![image](https://github.com/user-attachments/assets/be5a5430-cf09-407c-a4ba-3cd718749992)
+
+Step : Run the VaR calculation
+![image](https://github.com/user-attachments/assets/3ebe6c14-3e37-44c2-8866-ad251cdb5fe0)
+
+Step : Close the session
+![image](https://github.com/user-attachments/assets/254daf5b-8b4a-4f3a-a3ca-56de534b1d65)
 
 The script calculates VaR for AAPL stock over a 5-year period using Monte Carlo simulations with TensorFlow.
 
