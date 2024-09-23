@@ -22,8 +22,12 @@ Install the required packages with:
 
 
 ```Python
-pip install tensorflow snowflake-connector-python yfinance
+pip install tensorflow yfinance
 ````
+![image](https://github.com/user-attachments/assets/4abfec41-073c-4fc3-aae6-5f68ecd77f5e)
+
+![image](https://github.com/user-attachments/assets/8facffce-ffff-4985-b47c-41f02d55b8d0)
+
 Snowflake Setup
 Make sure you have a Snowflake account and set up your credentials for Snowpark access.
 
