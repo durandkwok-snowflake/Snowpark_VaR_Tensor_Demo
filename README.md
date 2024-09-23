@@ -23,7 +23,7 @@ Install the required packages with:
 Step : Install Packages
 
 ```Python
-pip install tensorflow yfinance
+!pip install tensorflow yfinance
 ````
 ![image](https://github.com/user-attachments/assets/4abfec41-073c-4fc3-aae6-5f68ecd77f5e)
 
