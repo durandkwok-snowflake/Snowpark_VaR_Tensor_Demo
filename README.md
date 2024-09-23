@@ -20,11 +20,13 @@ Snowflake Connector for Python (for Snowpark)
 yfinance for fetching stock data
 Install the required packages with:
 
-bash
-Copy code
+
+```Python
 pip install tensorflow snowflake-connector-python yfinance
+````
 Snowflake Setup
 Make sure you have a Snowflake account and set up your credentials for Snowpark access.
+
 
 Usage
 Configuration
