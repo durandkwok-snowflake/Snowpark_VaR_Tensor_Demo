@@ -30,12 +30,13 @@ Make sure you have a Snowflake account and set up your credentials for Snowpark 
 
 Usage
 Configuration
-Before running the code, ensure your Snowflake connection is properly configured. In this example, Snowpark fetches an active session (get_active_session()). You should have your Snowflake environment configured to handle this, or replace it with your session creation logic if needed.
+Before running the code, ensure your Snowflake connection is properly configured. 
+In this example, Snowpark fetches an active session (get_active_session()). You should have your Snowflake environment configured to handle this, or replace it with your session creation logic if needed.
 
-python
-Copy code
+```python
 session = get_active_session()
-Running the Code
+```
+
 The script calculates VaR for AAPL stock over a 5-year period using Monte Carlo simulations with TensorFlow.
 
 Steps:
@@ -44,11 +45,7 @@ Fetch Stock Data: Uses yfinance to download 5 years of historical data for AAPL.
 Run Monte Carlo Simulation: Simulates stock price movements using Geometric Brownian Motion (GBM) in TensorFlow.
 Calculate VaR: Computes VaR at a 95% confidence level based on the simulated price paths.
 Save Results: Saves the data and VaR calculation into a Snowflake table using Snowpark.
-To run the script:
 
-bash
-Copy code
-python var_calculation.py
 Monte Carlo Simulation
 Monte Carlo simulation is used to model the randomness of stock prices using the Geometric Brownian Motion (GBM) formula. TensorFlow generates multiple simulated price paths based on the stock’s historical volatility (sigma) and expected return (mu).
 
@@ -63,7 +60,7 @@ Load historical stock data fetched via yfinance.
 Store the final VaR results into a Snowflake table.
 At the end of the process, the results are saved to a Snowflake table as follows:
 
-python
-Copy code
+```python
 snowpark_df.write.mode("overwrite").save_as_table("AAPL_VAR_RESULTS")
+```
 Make sure your Snowflake environment has the necessary permissions to write data.
