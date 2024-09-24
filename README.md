@@ -12,6 +12,7 @@ Integrates with Snowflake via Snowpark to save and manage data in the cloud.
 
 Installation
 Prerequisites
+This notebook was created and executed using Snowflake's Notebook powered by SPCS.
 Ensure you have the following installed:
 
 Python 3.9+
